@@ -1,0 +1,30 @@
+.main {
+  &__intro {
+  }
+}
+
+.intro {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: 100%;
+  }
+
+  &__content {
+  }
+
+  &__text {
+  }
+
+  &__image {
+  }
+}
+
+.title-block {
+  &__label {
+  }
+
+  &__title {
+  }
+}

@@ -1,0 +1,48 @@
+// CONTENT
+.title-block {
+  > *:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+}
+
+.label {
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: em(7.5, 12);
+  text-transform: uppercase;
+  color: $grayColor;
+
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+
+  &::before {
+    content: '';
+    width: rem(16);
+    height: rem(2);
+    background: #d9d9d9;
+  }
+}
+
+.title-h1 {
+  font-size: rem(44);
+  font-weight: 700;
+  line-height: math.div(55, 44);
+
+  span {
+    color: $purpleColor;
+  }
+}
+
+.title-h2 {
+  font-size: rem(36);
+  font-family: $jakartaFont;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text {
+  line-height: math.div(32, 16);
+  color: #232e35;
+}

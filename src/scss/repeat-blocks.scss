@@ -1,7 +1,7 @@
 // CONTENT
 .title-block {
   > *:not(:last-child) {
-    margin: 0 0 10px 0;
+    margin-bottom: rem(16);
   }
 }
 
@@ -45,4 +45,33 @@
 .text {
   line-height: math.div(32, 16);
   color: #232e35;
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: rem(32);
+  @include adaptiveValue('column-gap', 32, 16);
+  row-gap: rem(5);
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(20);
+    transition: all 0.2s linear;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
 }

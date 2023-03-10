@@ -26,7 +26,7 @@
 }
 
 .title-h1 {
-  font-size: rem(44);
+  @include adaptiveValue('font-size', 44, 38);
   font-weight: 700;
   line-height: math.div(55, 44);
 
@@ -36,7 +36,7 @@
 }
 
 .title-h2 {
-  font-size: rem(36);
+  @include adaptiveValue('font-size', 36, 32);
   font-family: $jakartaFont;
   font-weight: 700;
   line-height: 1.2;
@@ -72,6 +72,26 @@
       &:hover {
         color: $purpleColor;
       }
+    }
+  }
+}
+
+.link-btn {
+  display: inline-block;
+  padding: rem(4) rem(8);
+  border: 1px solid #f1f1f1;
+  border-radius: rem(4);
+
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: math.div(15, 12);
+  color: $grayColor;
+  transition: all 0.2s linear;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 1px solid #909090;
+      color: #333;
     }
   }
 }

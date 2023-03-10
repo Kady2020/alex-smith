@@ -148,3 +148,168 @@
     line-height: math.div(24, 16);
   }
 }
+
+//todo WORKS
+.works {
+  &__container {
+    padding-top: rem(90);
+    padding-bottom: rem(30);
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(30);
+
+    &:not(:last-child) {
+      @include adaptiveValue('margin-bottom', 124, 40);
+    }
+
+    @media (max-width: em(600)) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+
+  &__arrow {
+    width: rem(40);
+    height: rem(40);
+    background-color: #eae6fe;
+    border-radius: rem(16);
+    overflow: hidden;
+    transition: background-color 0.2s linear;
+
+    font-size: rem(12);
+    color: $purpleColor;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #c3b9f1;
+      }
+    }
+
+    &_left {
+      transform: rotate(180deg);
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+
+  &__slider {
+    @media (max-width: em(600)) {
+      margin-right: rem(-15);
+      padding-right: rem(15);
+    }
+  }
+}
+
+.slide-item {
+  border: 1px solid #f5f5f5;
+  border-radius: rem(8);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  &__image-ibg {
+    padding-bottom: percent(295, 361);
+    opacity: 0.5;
+    overflow: hidden;
+    transition: opacity 0.2s linear;
+
+    img {
+      object-position: top;
+      transition: transform 0.2s linear;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 1;
+
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    @media (any-hover: none) {
+      opacity: 1;
+    }
+  }
+
+  &__body {
+    padding: rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    flex: 1 1 100%;
+  }
+
+  &__title-link {
+    font-weight: 500;
+    line-height: math.div(20, 16);
+    color: #232e35;
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+
+  &__icon {
+    font-size: rem(10);
+    transition: all 0.2s linear;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
+}
+
+//todo CAREER
+.career {
+  &__container {
+    padding-top: rem(90);
+    padding-bottom: rem(30);
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title-block {
+  }
+
+  &__tabs {
+  }
+}

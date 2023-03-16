@@ -12,29 +12,29 @@
 	<!-- <meta name="keywords" content=""> -->
 	<!-- <meta name="description" content=""> -->
 	<!-- !BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css?_v=20230316004849" rel="stylesheet"
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css?_v=20230316134300" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
 	<!-- !CHOICES SELECT -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css?_v=20230316004849" /> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css?_v=20230316134300" /> -->
 	<!-- !MAIN STYLE + IMPORT STYLE-->
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230316004849">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230316134300">
 	<link rel="shortcut icon" href="img/shortcut.svg">
 </head>
 
 
 <body>
-	<div class="wrapper">
+	<div data-fp class="wrapper">
 		<header class="header">
 			<div class="header__container">
 				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Services</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Portfolios</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Experience</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a data-goto=".services" href="#" class="menu__link">Services</a></li>
+							<li class="menu__item"><a data-goto=".works" href="#" class="menu__link">Portfolios</a></li>
+							<li class="menu__item"><a data-goto=".career" href="#" class="menu__link">Experience</a></li>
+							<li class="menu__item"><a data-goto=".blog" href="#" class="menu__link">Blog</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,550 +44,593 @@
 				</div>
 			</div>
 		</header>
+		<main class="main">
 
-		<main data-fp class="main">
-			<!--
-      <section data-fp-section class="main__intro intro">
-        <div class="intro__container">
-          <div class="intro__content">
-            <div class="intro__title-block title-block">
-              <p class="title-block__label label">MY NAME IS</p>
-              <h1 class="title-block__title title-h1">Alex <span>Smith.</span></h1>
-            </div>
-            <div class="intro__text text">
-              <p>
-                Creative front-end developer with more than +5 years of experience in enterprise companies and startups.
-                Proficient in
-                JavaScript, Angular, and React. Passionate about UI/UX
-              </p>
-            </div>
-            <div class="intro__socials socials">
-              <a href="#" class="socials__link _icon-s-instagram"></a>
-              <a href="#" class="socials__link _icon-s-github"></a>
-              <a href="#" class="socials__link _icon-s-twitter"></a>
-              <a href="#" class="socials__link _icon-s-linkedin"></a>
-            </div>
-          </div>
-          <div class="intro__decor decor-intro">
-            <div class="decor-intro__image">
-              <picture><source srcset="img/intro/alex-photo.webp" type="image/webp"><img class="decor-intro__alex-pic" src="img/intro/alex-photo.png" alt="Photo of Alex"></picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__services services">
-        <div class="services__container">
-          <div class="services__title-block title-block">
-            <p class="title-block__label label">SERVICES</p>
-            <h2 class="title-block__title title-h2">Specialized in</h2>
-          </div>
-          <div class="services__items">
-            <article class="services__item item-services">
-              <div class="item-services__icon">
-                <img src="img/services/icons/001.svg" alt="Icon Services">
-              </div>
-              <h3 class="item-services__title">UI/UX Design</h3>
-              <div class="item-services__text">
-                <p>
-                  Turn what you have in mind of a digital product into reality. For any platform you consider.
-                </p>
-              </div>
-            </article>
-
-            <article class="services__item item-services">
-              <div class="item-services__icon">
-                <img src="img/services/icons/002.svg" alt="Icon Services">
-              </div>
-              <h3 class="item-services__title">Application Development</h3>
-              <div class="item-services__text">
-                <p>
-                  Standard designing, building, and implementing your applications with documentation.
-                </p>
-              </div>
-            </article>
-
-            <article class="services__item item-services">
-              <div class="item-services__icon">
-                <img src="img/services/icons/003.svg" alt="Icon Services">
-              </div>
-              <h3 class="item-services__title">Web Development</h3>
-              <div class="item-services__text">
-                <p>
-                  Create and maintain your websites and also take care of its performance and traffic capacity.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__works works">
-        <div class="works__container">
-          <div class="works__header">
-            <div class="works__title-block title-block">
-              <p class="title-block__label label">MY WORKS</p>
-              <h2 class="title-block__title title-h2">Featured Portfolios</h2>
-            </div>
-            <div class="works__controls">
-              <button class="works__arrow works__arrow_left _icon-slider-arrow" type="button"></button>
-              <button class="works__arrow works__arrow_right _icon-slider-arrow" type="button"></button>
-            </div>
-          </div>
-          <div class="works__slider swiper">
-            <div class="works__wrapper swiper-wrapper">
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/001.webp" type="image/webp"><img src="img/works/001.jpg" alt="Agency Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Agency Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">WordPress</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/002.webp" type="image/webp"><img src="img/works/002.jpg" alt="Dashboard Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Dashboard Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">React</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/003.webp" type="image/webp"><img src="img/works/003.jpg" alt="Dashboard Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Support Center Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">PHP</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/001.webp" type="image/webp"><img src="img/works/001.jpg" alt="Agency Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Agency Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">WordPress</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/002.webp" type="image/webp"><img src="img/works/002.jpg" alt="Dashboard Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Dashboard Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">React</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="works__slide swiper-slide">
-                <article class="slide-item">
-                  <a href="#" class="slide-item__image-ibg">
-                    <picture><source srcset="img/works/003.webp" type="image/webp"><img src="img/works/003.jpg" alt="Dashboard Website"></picture>
-                  </a>
-                  <div class="slide-item__body">
-                    <h3 class="slide-item__title">
-                      <a href="#" class="slide-item__title-link">Support Center Website.</a>
-                    </h3>
-                    <div class="slide-item__links">
-                      <a href="#" class="slide-item__category link-btn">PHP</a>
-                      <a href="#" class="slide-item__icon _icon-link"></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__career career">
-        <div data-tabs="767.98" class="career__container">
-          <div class="career__body">
-            <div class="career__title-block title-block">
-              <p class="title-block__label label">career path</p>
-              <h2 class="title-block__title title-h2">Work Experices</h2>
-            </div>
-
-            <nav data-tabs-titles class="career__nav nav-career">
-              <button type="button" class="nav-career__title _tab-active">Apple</button>
-              <button type="button" class="nav-career__title">Microsoft</button>
-              <button type="button" class="nav-career__title">Facebook</button>
-              <button type="button" class="nav-career__title">Slack</button>
-            </nav>
-
-            <div data-tabs-body class="career__content content-career">
-              <div class="content-career__body">
-                <div class="content-career__header">
-                  <h3 class="content-career__title">Front-end Developer <a href="#">Apple .Inc</a></h3>
-                  <div class="content-career__location">California, United States</div>
-                  <div class="content-career__time">Nov 2020 - Present · Full-time</div>
-                  <div class="content-career__tags">
-                    <a href="#" class="content-career__tags-link link-btn">JavaScript</a>
-                    <a href="#" class="content-career__tags-link link-btn">Swift</a>
-                    <a href="#" class="content-career__tags-link link-btn">Go</a>
-                  </div>
-                </div>
-                <div class="content-career__main">
-                  <ul class="content-career__list">
-                    <li class="content-career__list-item">
-                      Improving overall website performance for mobile users.
-                    </li>
-                    <li class="content-career__list-item">
-                      Collaborate with back-end developers and web designers to improve usability.
-                    </li>
-                    <li class="content-career__list-item">
-                      Add voice search feature for mobile app.
-                    </li>
-                    <li class="content-career__list-item">
-                      Developing an admin panel to manage contents, users, products and ...
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="content-career__body">
-                <div class="content-career__header">
-                  <h3 class="content-career__title">C Sharp Developer <a href="#">Microsoft</a></h3>
-                  <div class="content-career__location">California, United States</div>
-                  <div class="content-career__time">Nov 2018 - 2020 · Full-time</div>
-                  <div class="content-career__tags">
-                    <a href="#" class="content-career__tags-link link-btn">C#</a>
-                    <a href="#" class="content-career__tags-link link-btn">C++</a>
-                  </div>
-                </div>
-                <div class="content-career__main">
-                  <ul class="content-career__list">
-                    <li class="content-career__list-item">
-                      Improving overall website performance for mobile users.
-                    </li>
-                    <li class="content-career__list-item">
-                      Collaborate with back-end developers and web designers to improve usability.
-                    </li>
-                    <li class="content-career__list-item">
-                      Add voice search feature for mobile app.
-                    </li>
-                    <li class="content-career__list-item">
-                      Developing an admin panel to manage contents, users, products and ...
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="content-career__body">
-                <div class="content-career__header">
-                  <h3 class="content-career__title">ABAP Developer <a href="#">SAP</a></h3>
-                  <div class="content-career__location">California, United States</div>
-                  <div class="content-career__time">Nov 2014 - 2018 · Full-time</div>
-                  <div class="content-career__tags">
-                    <a href="#" class="content-career__tags-link link-btn">ABAP</a>
-                    <a href="#" class="content-career__tags-link link-btn">C++</a>
-                  </div>
-                </div>
-                <div class="content-career__main">
-                  <ul class="content-career__list">
-                    <li class="content-career__list-item">
-                      Improving overall website performance for mobile users.
-                    </li>
-                    <li class="content-career__list-item">
-                      Collaborate with back-end developers and web designers to improve usability.
-                    </li>
-                    <li class="content-career__list-item">
-                      Add voice search feature for mobile app.
-                    </li>
-                    <li class="content-career__list-item">
-                      Developing an admin panel to manage contents, users, products and ...
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="content-career__body">
-                <div class="content-career__header">
-                  <h3 class="content-career__title">Java Developer <a href="#">Slack</a></h3>
-                  <div class="content-career__location">California, United States</div>
-                  <div class="content-career__time">Nov 2013 - 2014 · Full-time</div>
-                  <div class="content-career__tags">
-                    <a href="#" class="content-career__tags-link link-btn">Java</a>
-                    <a href="#" class="content-career__tags-link link-btn">Phyton</a>
-                  </div>
-                </div>
-                <div class="content-career__main">
-                  <ul class="content-career__list">
-                    <li class="content-career__list-item">
-                      Improving overall website performance for mobile users.
-                    </li>
-                    <li class="content-career__list-item">
-                      Collaborate with back-end developers and web designers to improve usability.
-                    </li>
-                    <li class="content-career__list-item">
-                      Add voice search feature for mobile app.
-                    </li>
-                    <li class="content-career__list-item">
-                      Developing an admin panel to manage contents, users, products and ...
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__blog blog">
-        <div class="blog__container">
-          <div class="blog__title-block title-block">
-            <p class="title-block__label label">MY ARTICLES</p>
-            <h2 class="title-block__title title-h2">Personal Blog</h2>
-          </div>
-          <div class="blog__items">
-            <article class="blog__item item-blog">
-              <a href="#" class="item-blog__image-ibg">
-                <picture><source srcset="img/blog/001.webp" type="image/webp"><img src="img/blog/001.jpg" alt="Article image"></picture>
-              </a>
-              <div class="item-blog__content">
-                <h3 class="item-blog__title">
-                  <a href="#" class="item-blog__link-title">How to prototype in figma</a>
-                </h3>
-                <div class="item-blog__date link-btn">July 15, 2021</div>
-                <div class="item-blog__text text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
-                    laoreet. Fusce finibus ...
-                  </p>
-                </div>
-                <a href="#" class="item-blog__link-article">Continue Reading</a>
-              </div>
-            </article>
-            <article class="blog__item item-blog">
-              <a href="#" class="item-blog__image-ibg">
-                <picture><source srcset="img/blog/002.webp" type="image/webp"><img src="img/blog/002.jpg" alt="Article image"></picture>
-              </a>
-              <div class="item-blog__content">
-                <h3 class="item-blog__title">
-                  <a href="#" class="item-blog__link-title">Being more productive with Notion</a>
-                </h3>
-                <div class="item-blog__date link-btn">Aug 8, 2020</div>
-                <div class="item-blog__text text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
-                    laoreet. Fusce finibus ...
-                  </p>
-                </div>
-                <a href="#" class="item-blog__link-article">Continue Reading</a>
-              </div>
-            </article>
-            <article class="blog__item item-blog">
-              <a href="#" class="item-blog__image-ibg">
-                <picture><source srcset="img/blog/003.webp" type="image/webp"><img src="img/blog/003.jpg" alt="Article image"></picture>
-              </a>
-              <div class="item-blog__content">
-                <h3 class="item-blog__title">
-                  <a href="#" class="item-blog__link-title">Beginners guide to adobe illustrator</a>
-                </h3>
-                <div class="item-blog__date link-btn">Feb 19, 2021</div>
-                <div class="item-blog__text text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
-                    laoreet. Fusce finibus ...
-                  </p>
-                </div>
-                <a href="#" class="item-blog__link-article">Continue Reading</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__testimonials testimonials">
-        <div class="testimonials__container">
-          <div class="testimonials__title-block title-block">
-            <p class="title-block__label label">MY CLIENTS</p>
-            <h2 class="title-block__title title-h2">Testimonials</h2>
-          </div>
-          <div class="testimonials__items">
-            <article class="testimonials__item item-testimonials">
-              <div class="item-testimonials__avatar-ibg">
-                <picture><source srcset="img/testimonials/001.webp" type="image/webp"><img src="img/testimonials/001.jpg" alt="Avatar image"></picture>
-              </div>
-              <div class="item-testimonials__content">
-                <div class="item-testimonials__text text">
-                  <p>
-                    We were very pleased to hear how you resolved our website's user interface issues and challenges.
-                  </p>
-                </div>
-                <div class="item-testimonials__author">
-                  <div class="item-testimonials__author-name">Amelia Miller</div>
-                  <div class="item-testimonials__author-profession link-btn">Designer</div>
-                </div>
-              </div>
-            </article>
-            <article class="testimonials__item item-testimonials">
-              <div class="item-testimonials__avatar-ibg">
-                <picture><source srcset="img/testimonials/002.webp" type="image/webp"><img src="img/testimonials/002.jpg" alt="Avatar image"></picture>
-              </div>
-              <div class="item-testimonials__content">
-                <div class="item-testimonials__text text">
-                  <p>
-                    I’m glad I decided to work with you. The project was delivered on time with all the requirements.
-                  </p>
-                </div>
-                <div class="item-testimonials__author">
-                  <div class="item-testimonials__author-name">James Delaney</div>
-                  <div class="item-testimonials__author-profession link-btn">Developer</div>
-                </div>
-              </div>
-            </article>
-            <article class="testimonials__item item-testimonials">
-              <div class="item-testimonials__avatar-ibg">
-                <picture><source srcset="img/testimonials/003.webp" type="image/webp"><img src="img/testimonials/003.jpg" alt="Avatar image"></picture>
-              </div>
-              <div class="item-testimonials__content">
-                <div class="item-testimonials__text text">
-                  <p>
-                    The management of our projects was always faced with difficulties, but you handled these well.
-                  </p>
-                </div>
-                <div class="item-testimonials__author">
-                  <div class="item-testimonials__author-name">Isabella Bennett</div>
-                  <div class="item-testimonials__author-profession link-btn">Manager</div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section data-fp-section class="main__skills skills">
-        <div class="skills__container">
-          <div class="skills__title-block title-block">
-            <p class="title-block__label label">LEARNING PATH</p>
-            <h2 class="title-block__title title-h2">Education & Skills</h2>
-          </div>
-          <div class="skills__body">
-            <div class="skills__timeline timeline-skills">
-              <div class="timeline-skills__item">
-                <div class="timeline-skills__title">Kingston university</div>
-                <div class="timeline-skills__text">Master's degree - Software Engineering</div>
-                <div class="timeline-skills__date">2019 - 2021</div>
-              </div>
-              <div class="timeline-skills__item">
-                <div class="timeline-skills__title">Kingston university</div>
-                <div class="timeline-skills__text">Bachelor's degree - Computer Engineering</div>
-                <div class="timeline-skills__date">2015 - 2019</div>
-              </div>
-              <div class="timeline-skills__item">
-                <div class="timeline-skills__title">Westminster School</div>
-                <div class="timeline-skills__text">Diploma's degree - Mathematics</div>
-                <div class="timeline-skills__date">2013 - 2015</div>
-              </div>
-            </div>
-            <div class="skills__content content-skills">
-              <div class="content-skills__text text">
-                <p>
-                  For 5+ years, I have been continuously learning in the field of front-end and experimenting with new
-                  technologies and
-                  frameworks, and here you can see a summary of my skills.
-                </p>
-              </div>
-              <div class="content-skills__items">
-                <div class="content-skills__item">
-                  <div class="content-skills__lang">React</div>
-                  <div class="content-skills__line">
-                    <span style="width: 67.5%;"></span>
-                  </div>
-                </div>
-                <div class="content-skills__item">
-                  <div class="content-skills__lang">Angular</div>
-                  <div class="content-skills__line">
-                    <span style="width: 52%;"></span>
-                  </div>
-                </div>
-                <div class="content-skills__item">
-                  <div class="content-skills__lang">Javascript</div>
-                  <div class="content-skills__line">
-                    <span style="width: 63.8%;"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-			<section data-ft-section class="main__contacts contacts">
-				<div class="contacts__container">
-					<form action="#" class="contacts__form form">
-						<div class="form__item">
-							<input autocomplete="on" type="text" name="form[]" data-error="Error" placeholder="Name" class="form__input">
+			<section data-fp-section class="main__intro intro">
+				<div class="intro__container">
+					<div class="intro__content">
+						<div class="intro__title-block title-block">
+							<p class="title-block__label label">MY NAME IS</p>
+							<h1 class="title-block__title title-h1">Alex <span>Smith.</span></h1>
 						</div>
-						<div class="form__item">
-							<input autocomplete="on" type="email" name="form[]" data-error="Error" placeholder="email" class="form__input">
+						<div class="intro__text text">
+							<p>
+								Creative front-end developer with more than +5 years of experience in enterprise companies and startups.
+								Proficient in
+								JavaScript, Angular, and React. Passionate about UI/UX
+							</p>
 						</div>
-						<div class="form__item">
-							<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error" class="form__input"></textarea>
+						<div class="intro__socials socials">
+							<a href="#" class="socials__link _icon-s-instagram"></a>
+							<a href="#" class="socials__link _icon-s-github"></a>
+							<a href="#" class="socials__link _icon-s-twitter"></a>
+							<a href="#" class="socials__link _icon-s-linkedin"></a>
 						</div>
-					</form>
+					</div>
+					<div class="intro__decor decor-intro">
+						<div class="decor-intro__image">
+							<picture><source srcset="img/intro/alex-photo.webp" type="image/webp"><img class="decor-intro__alex-pic" src="img/intro/alex-photo.png" alt="Photo of Alex"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__services services">
+				<div class="services__container">
+					<div class="services__title-block title-block">
+						<p class="title-block__label label">SERVICES</p>
+						<h2 class="title-block__title title-h2">Specialized in</h2>
+					</div>
+					<div class="services__items">
+						<article class="services__item item-services">
+							<div class="item-services__icon">
+								<img src="img/services/icons/001.svg" alt="Icon Services">
+							</div>
+							<h3 class="item-services__title">UI/UX Design</h3>
+							<div class="item-services__text">
+								<p>
+									Turn what you have in mind of a digital product into reality. For any platform you consider.
+								</p>
+							</div>
+						</article>
+
+						<article class="services__item item-services">
+							<div class="item-services__icon">
+								<img src="img/services/icons/002.svg" alt="Icon Services">
+							</div>
+							<h3 class="item-services__title">Application Development</h3>
+							<div class="item-services__text">
+								<p>
+									Standard designing, building, and implementing your applications with documentation.
+								</p>
+							</div>
+						</article>
+
+						<article class="services__item item-services">
+							<div class="item-services__icon">
+								<img src="img/services/icons/003.svg" alt="Icon Services">
+							</div>
+							<h3 class="item-services__title">Web Development</h3>
+							<div class="item-services__text">
+								<p>
+									Create and maintain your websites and also take care of its performance and traffic capacity.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__works works">
+				<div class="works__container">
+					<div class="works__header">
+						<div class="works__title-block title-block">
+							<p class="title-block__label label">MY WORKS</p>
+							<h2 class="title-block__title title-h2">Featured Portfolios</h2>
+						</div>
+						<div class="works__controls">
+							<button class="works__arrow works__arrow_left _icon-slider-arrow" type="button"></button>
+							<button class="works__arrow works__arrow_right _icon-slider-arrow" type="button"></button>
+						</div>
+					</div>
+					<div class="works__slider swiper">
+						<div class="works__wrapper swiper-wrapper">
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/001.webp" type="image/webp"><img src="img/works/001.jpg" alt="Agency Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Agency Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">WordPress</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/002.webp" type="image/webp"><img src="img/works/002.jpg" alt="Dashboard Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Dashboard Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">React</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/003.webp" type="image/webp"><img src="img/works/003.jpg" alt="Dashboard Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Support Center Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">PHP</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/001.webp" type="image/webp"><img src="img/works/001.jpg" alt="Agency Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Agency Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">WordPress</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/002.webp" type="image/webp"><img src="img/works/002.jpg" alt="Dashboard Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Dashboard Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">React</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="works__slide swiper-slide">
+								<article class="slide-item">
+									<a href="#" class="slide-item__image-ibg">
+										<picture><source srcset="img/works/003.webp" type="image/webp"><img src="img/works/003.jpg" alt="Dashboard Website"></picture>
+									</a>
+									<div class="slide-item__body">
+										<h3 class="slide-item__title">
+											<a href="#" class="slide-item__title-link">Support Center Website.</a>
+										</h3>
+										<div class="slide-item__links">
+											<a href="#" class="slide-item__category link-btn">PHP</a>
+											<a href="#" class="slide-item__icon _icon-link"></a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__career career">
+				<div data-tabs="767.98" class="career__container">
+					<div class="career__body">
+						<div class="career__title-block title-block">
+							<p class="title-block__label label">career path</p>
+							<h2 class="title-block__title title-h2">Work Experices</h2>
+						</div>
+
+						<nav data-tabs-titles class="career__nav nav-career">
+							<button type="button" class="nav-career__title _tab-active">Apple</button>
+							<button type="button" class="nav-career__title">Microsoft</button>
+							<button type="button" class="nav-career__title">Facebook</button>
+							<button type="button" class="nav-career__title">Slack</button>
+						</nav>
+
+						<div data-tabs-body class="career__content content-career">
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<h3 class="content-career__title">Front-end Developer <a href="#">Apple .Inc</a></h3>
+									<div class="content-career__location">California, United States</div>
+									<div class="content-career__time">Nov 2020 - Present · Full-time</div>
+									<div class="content-career__tags">
+										<a href="#" class="content-career__tags-link link-btn">JavaScript</a>
+										<a href="#" class="content-career__tags-link link-btn">Swift</a>
+										<a href="#" class="content-career__tags-link link-btn">Go</a>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list">
+										<li class="content-career__list-item">
+											Improving overall website performance for mobile users.
+										</li>
+										<li class="content-career__list-item">
+											Collaborate with back-end developers and web designers to improve usability.
+										</li>
+										<li class="content-career__list-item">
+											Add voice search feature for mobile app.
+										</li>
+										<li class="content-career__list-item">
+											Developing an admin panel to manage contents, users, products and ...
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<h3 class="content-career__title">C Sharp Developer <a href="#">Microsoft</a></h3>
+									<div class="content-career__location">California, United States</div>
+									<div class="content-career__time">Nov 2018 - 2020 · Full-time</div>
+									<div class="content-career__tags">
+										<a href="#" class="content-career__tags-link link-btn">C#</a>
+										<a href="#" class="content-career__tags-link link-btn">C++</a>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list">
+										<li class="content-career__list-item">
+											Improving overall website performance for mobile users.
+										</li>
+										<li class="content-career__list-item">
+											Collaborate with back-end developers and web designers to improve usability.
+										</li>
+										<li class="content-career__list-item">
+											Add voice search feature for mobile app.
+										</li>
+										<li class="content-career__list-item">
+											Developing an admin panel to manage contents, users, products and ...
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<h3 class="content-career__title">ABAP Developer <a href="#">SAP</a></h3>
+									<div class="content-career__location">California, United States</div>
+									<div class="content-career__time">Nov 2014 - 2018 · Full-time</div>
+									<div class="content-career__tags">
+										<a href="#" class="content-career__tags-link link-btn">ABAP</a>
+										<a href="#" class="content-career__tags-link link-btn">C++</a>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list">
+										<li class="content-career__list-item">
+											Improving overall website performance for mobile users.
+										</li>
+										<li class="content-career__list-item">
+											Collaborate with back-end developers and web designers to improve usability.
+										</li>
+										<li class="content-career__list-item">
+											Add voice search feature for mobile app.
+										</li>
+										<li class="content-career__list-item">
+											Developing an admin panel to manage contents, users, products and ...
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content-career__body">
+								<div class="content-career__header">
+									<h3 class="content-career__title">Java Developer <a href="#">Slack</a></h3>
+									<div class="content-career__location">California, United States</div>
+									<div class="content-career__time">Nov 2013 - 2014 · Full-time</div>
+									<div class="content-career__tags">
+										<a href="#" class="content-career__tags-link link-btn">Java</a>
+										<a href="#" class="content-career__tags-link link-btn">Phyton</a>
+									</div>
+								</div>
+								<div class="content-career__main">
+									<ul class="content-career__list">
+										<li class="content-career__list-item">
+											Improving overall website performance for mobile users.
+										</li>
+										<li class="content-career__list-item">
+											Collaborate with back-end developers and web designers to improve usability.
+										</li>
+										<li class="content-career__list-item">
+											Add voice search feature for mobile app.
+										</li>
+										<li class="content-career__list-item">
+											Developing an admin panel to manage contents, users, products and ...
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__blog blog">
+				<div class="blog__container">
+					<div class="blog__title-block title-block">
+						<p class="title-block__label label">MY ARTICLES</p>
+						<h2 class="title-block__title title-h2">Personal Blog</h2>
+					</div>
+					<div class="blog__items">
+						<article class="blog__item item-blog">
+							<a href="#" class="item-blog__image-ibg">
+								<picture><source srcset="img/blog/001.webp" type="image/webp"><img src="img/blog/001.jpg" alt="Article image"></picture>
+							</a>
+							<div class="item-blog__content">
+								<h3 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">How to prototype in figma</a>
+								</h3>
+								<div class="item-blog__date link-btn">July 15, 2021</div>
+								<div class="item-blog__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
+										laoreet. Fusce finibus ...
+									</p>
+								</div>
+								<a href="#" class="item-blog__link-article">Continue Reading</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<a href="#" class="item-blog__image-ibg">
+								<picture><source srcset="img/blog/002.webp" type="image/webp"><img src="img/blog/002.jpg" alt="Article image"></picture>
+							</a>
+							<div class="item-blog__content">
+								<h3 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">Being more productive with Notion</a>
+								</h3>
+								<div class="item-blog__date link-btn">Aug 8, 2020</div>
+								<div class="item-blog__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
+										laoreet. Fusce finibus ...
+									</p>
+								</div>
+								<a href="#" class="item-blog__link-article">Continue Reading</a>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<a href="#" class="item-blog__image-ibg">
+								<picture><source srcset="img/blog/003.webp" type="image/webp"><img src="img/blog/003.jpg" alt="Article image"></picture>
+							</a>
+							<div class="item-blog__content">
+								<h3 class="item-blog__title">
+									<a href="#" class="item-blog__link-title">Beginners guide to adobe illustrator</a>
+								</h3>
+								<div class="item-blog__date link-btn">Feb 19, 2021</div>
+								<div class="item-blog__text text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque
+										laoreet. Fusce finibus ...
+									</p>
+								</div>
+								<a href="#" class="item-blog__link-article">Continue Reading</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__testimonials testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__title-block title-block">
+						<p class="title-block__label label">MY CLIENTS</p>
+						<h2 class="title-block__title title-h2">Testimonials</h2>
+					</div>
+					<div class="testimonials__items">
+						<article class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar-ibg">
+								<picture><source srcset="img/testimonials/001.webp" type="image/webp"><img src="img/testimonials/001.jpg" alt="Avatar image"></picture>
+							</div>
+							<div class="item-testimonials__content">
+								<div class="item-testimonials__text text">
+									<p>
+										We were very pleased to hear how you resolved our website's user interface issues and challenges.
+									</p>
+								</div>
+								<div class="item-testimonials__author">
+									<div class="item-testimonials__author-name">Amelia Miller</div>
+									<div class="item-testimonials__author-profession link-btn">Designer</div>
+								</div>
+							</div>
+						</article>
+						<article class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar-ibg">
+								<picture><source srcset="img/testimonials/002.webp" type="image/webp"><img src="img/testimonials/002.jpg" alt="Avatar image"></picture>
+							</div>
+							<div class="item-testimonials__content">
+								<div class="item-testimonials__text text">
+									<p>
+										I’m glad I decided to work with you. The project was delivered on time with all the requirements.
+									</p>
+								</div>
+								<div class="item-testimonials__author">
+									<div class="item-testimonials__author-name">James Delaney</div>
+									<div class="item-testimonials__author-profession link-btn">Developer</div>
+								</div>
+							</div>
+						</article>
+						<article class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar-ibg">
+								<picture><source srcset="img/testimonials/003.webp" type="image/webp"><img src="img/testimonials/003.jpg" alt="Avatar image"></picture>
+							</div>
+							<div class="item-testimonials__content">
+								<div class="item-testimonials__text text">
+									<p>
+										The management of our projects was always faced with difficulties, but you handled these well.
+									</p>
+								</div>
+								<div class="item-testimonials__author">
+									<div class="item-testimonials__author-name">Isabella Bennett</div>
+									<div class="item-testimonials__author-profession link-btn">Manager</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section data-fp-section class="main__skills skills">
+				<div class="skills__container">
+					<div class="skills__title-block title-block">
+						<p class="title-block__label label">LEARNING PATH</p>
+						<h2 class="title-block__title title-h2">Education & Skills</h2>
+					</div>
+					<div class="skills__body">
+						<div class="skills__timeline timeline-skills">
+							<div class="timeline-skills__item">
+								<div class="timeline-skills__title">Kingston university</div>
+								<div class="timeline-skills__text">Master's degree - Software Engineering</div>
+								<div class="timeline-skills__date">2019 - 2021</div>
+							</div>
+							<div class="timeline-skills__item">
+								<div class="timeline-skills__title">Kingston university</div>
+								<div class="timeline-skills__text">Bachelor's degree - Computer Engineering</div>
+								<div class="timeline-skills__date">2015 - 2019</div>
+							</div>
+							<div class="timeline-skills__item">
+								<div class="timeline-skills__title">Westminster School</div>
+								<div class="timeline-skills__text">Diploma's degree - Mathematics</div>
+								<div class="timeline-skills__date">2013 - 2015</div>
+							</div>
+						</div>
+						<div class="skills__content content-skills">
+							<div class="content-skills__text text">
+								<p>
+									For 5+ years, I have been continuously learning in the field of front-end and experimenting with new
+									technologies and
+									frameworks, and here you can see a summary of my skills.
+								</p>
+							</div>
+							<div class="content-skills__items">
+								<div class="content-skills__item">
+									<div class="content-skills__lang">React</div>
+									<div class="content-skills__line">
+										<span style="width: 67.5%;"></span>
+									</div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__lang">Angular</div>
+									<div class="content-skills__line">
+										<span style="width: 52%;"></span>
+									</div>
+								</div>
+								<div class="content-skills__item">
+									<div class="content-skills__lang">Javascript</div>
+									<div class="content-skills__line">
+										<span style="width: 63.8%;"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
+		<div data-fp-section class="bottom">
+			<section class="main__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<form action="#" class="contacts__form form">
+							<div class="form__item">
+								<input autocomplete="on" type="text" name="form[]" data-error="Error" data-required placeholder="Name" class="form__input">
+							</div>
+							<div class="form__item">
+								<input autocomplete="on" type="email" name="form[]" data-error="Error" data-required="email" placeholder="Email" class="form__input">
+							</div>
+							<div class="form__item">
+								<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error" class="form__input"></textarea>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button">Send Message</button>
+							</div>
+						</form>
+						<ul class="contacts__list list-contacts">
+							<li class="list-contacts__item">
+								<div class="list-contacts__icon">
+									<img src="img/contacts/icons/001.svg" alt="Address icon">
+								</div>
+								<div class="list-contacts__body">
+									<div class="list-contacts__title">Address</div>
+									<a href="https://goo.gl/maps/unDvvoZPQf4u9Qf27" class="list-contacts__text">3424 Layman Avenue,
+										Fayetteville, NC</a>
+								</div>
+							</li>
+							<li class="list-contacts__item">
+								<div class="list-contacts__icon">
+									<img src="img/contacts/icons/002.svg" alt="Phone icon">
+								</div>
+								<div class="list-contacts__body">
+									<div class="list-contacts__title">Phone</div>
+									<a href="tel:+15014141541" class="list-contacts__text">+1 (501) 414-1541</a>
+								</div>
+							</li>
+							<li class="list-contacts__item">
+								<div class="list-contacts__icon">
+									<img src="img/contacts/icons/003.svg" alt="E-Mail icon">
+								</div>
+								<div class="list-contacts__body">
+									<div class="list-contacts__title">E-Mail</div>
+									<a href="mailto:devchapter@gmail.com" class="list-contacts__text">devchapter@gmail.com</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__socials socials">
+						<a href="#" class="socials__link _icon-s-instagram"></a>
+						<a href="#" class="socials__link _icon-s-github"></a>
+						<a href="#" class="socials__link _icon-s-twitter"></a>
+						<a href="#" class="socials__link _icon-s-linkedin"></a>
+					</div>
+					<div class="footer__copy">© 2022 - DevChapter</div>
+				</div>
+			</footer>
+		</div>
 	</div>
 	<!-- !BOOTSTRAP -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js?_v=20230316004849"
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js?_v=20230316134300"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script> -->
 
 	<!-- !CHOICES SELECT -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js?_v=20230316004849"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js?_v=20230316134300"></script> -->
 
 	<!-- !IONICONS -->
-	<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20230316004849"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20230316004849"></script> -->
+	<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20230316134300"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20230316134300"></script> -->
 
 	<!--! MAIN.JS -->
-	<script src="js/app.min.js?_v=20230316004849"></script>
+	<script src="js/app.min.js?_v=20230316134300"></script>
 
 </body>
 
